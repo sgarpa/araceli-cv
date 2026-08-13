@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Araceli Felipe Osuna | Maestra de Educación Infantil</title>
+
+  <meta name="description"
+        content="Currículum profesional de Araceli Felipe Osuna, Maestra de Educación Infantil y Técnico Superior en Educación Infantil.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f8f5ef;
+      --white: #ffffff;
+      --sage: #809b88;
+      --sage-dark: #496653;
+      --pink: #e8c9c3;
+      --text: #303936;
+      --muted: #68716c;
+      --line: #e4e1d9;
+      --shadow: 0 15px 45px rgba(56, 70, 61, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(248, 245, 239, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(228, 225, 217, 0.8);
+    }
+
+    .nav-inner {
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 1.35rem;
+      color: var(--sage-dark);
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--sage-dark);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 430px;
+      height: 430px;
+      border-radius: 50%;
+      background: var(--pink);
+      opacity: 0.28;
+      right: -140px;
+      top: 50px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: var(--sage);
+      opacity: 0.12;
+      left: -100px;
+      bottom: 40px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      color: var(--sage-dark);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 0.78rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3.2rem, 7vw, 6rem);
+      line-height: 1.05;
+      color: var(--sage-dark);
+      margin-bottom: 22px;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+    }
+
+    .location {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+
+    .button-primary {
+      background: var(--sage-dark);
+      color: white;
+    }
+
+    .button-primary:hover {
+      transform: translateY(-2px);
+      background: #3d5847;
+    }
+
+    .button-secondary {
+      border: 1px solid var(--sage);
+      color: var(--sage-dark);
+      background: rgba(255,255,255,0.4);
+    }
+
+    .button-secondary:hover {
+      background: white;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      color: var(--sage-dark);
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 45px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .quote {
+      background: var(--cream);
+      padding: 40px;
+      border-left: 5px solid var(--pink);
+      border-radius: 15px;
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      color: var(--sage-dark);
+    }
+
+    /* EDUCATION */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .education-card {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--sage);
+    }
+
+    .education-card .number {
+      color: var(--pink);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .education-card h3 {
+      margin: 15px 0 10px;
+      color: var(--sage-dark);
+      font-size: 1.3rem;
+    }
+
+    .education-card p {
+      color: var(--muted);
+    }
+
+    /* EXPERIENCE */
+
+    .experience {
+      background: white;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 850px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 9px;
+      top: 5px;
+      bottom: 5px;
+      width: 2px;
+      background: var(--line);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 45px;
+      margin-bottom: 45px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--sage);
+      border: 5px solid var(--cream);
+    }
+
+    .timeline-item h3 {
+      color: var(--sage-dark);
+      font-size: 1.3rem;
+    }
+
+    .timeline-date {
+      color: var(--pink);
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin: 5px 0 10px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+    }
+
+    /* SKILLS */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .skill {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: var(--shadow);
+      transition: 0.25s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-4px);
+    }
+
+    .skill-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .skill h3 {
+      color: var(--sage-dark);
+      font-size: 1rem;
+    }
+
+    .skill p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: var(--sage-dark);
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact .section-subtitle {
+      color: rgba(255,255,255,0.75);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-box {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .contact-item {
+      padding: 13px 22px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 30px;
+      color: white;
+    }
+
+    .contact-item:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #354b3c;
+      color: rgba(255,255,255,0.65);
+      text-align: center;
+      padding: 25px;
+      font-size: 0.85rem;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 750px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero::before {
+        width: 280px;
+        height: 280px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .about-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      h1 {
+        font-size: 3.3rem;
+      }
+
+      .quote {
+        padding: 28px;
+        font-size: 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-description {
+        font-size: 0.98rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVEGACIÓN -->
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#" class="logo">
+        Araceli Felipe
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#competencias">Competencias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- PORTADA -->
+
+  <header class="hero">
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Educación Infantil
+        </div>
+
+        <h1>
+          Araceli<br>
+          Felipe Osuna
+        </h1>
+
+        <h2>
+          Maestra de Educación Infantil
+        </h2>
+
+        <p class="hero-description">
+          Graduada en Magisterio Infantil y Técnico Superior en Educación
+          Infantil, con experiencia profesional en diferentes escuelas
+          infantiles.
+        </p>
+
+        <div class="location">
+          📍 Alfafar, Valencia
+        </div>
+
+        <div class="buttons">
+          <a href="#experiencia" class="button button-primary">
+            Ver mi experiencia
+          </a>
+
+          <a href="#contacto" class="button button-secondary">
+            Contactar
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- SOBRE MÍ -->
+
+  <section id="sobre-mi" class="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div class="about-text">
+
+          <div class="eyebrow">
+            Sobre mí
+          </div>
+
+          <h2 class="section-title">
+            Educar es acompañar
+          </h2>
+
+          <p>
+            Soy Araceli Felipe Osuna, maestra de Educación Infantil con
+            formación universitaria y técnica especializada en el ámbito
+            educativo.
+          </p>
+
+          <p>
+            Mi experiencia en diferentes escuelas infantiles me ha permitido
+            conocer de cerca las necesidades de los niños y niñas durante sus
+            primeras etapas de desarrollo.
+          </p>
+
+          <p>
+            Me considero una persona responsable, cercana, creativa y
+            comprometida con crear espacios seguros, afectivos y estimulantes
+            donde cada niño pueda aprender y desarrollarse a su propio ritmo.
+          </p>
+
+        </div>
+
+        <div class="quote">
+          “Cada niño tiene su propio ritmo para descubrir, aprender y crecer.”
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FORMACIÓN -->
+
+  <section id="formacion">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Formación académica
+      </div>
+
+      <h2 class="section-title">
+        Mi formación
+      </h2>
+
+      <p class="section-subtitle">
+        Una formación especializada que combina la preparación universitaria
+        con conocimientos técnicos específicos de Educación Infantil.
+      </p>
+
+
+      <div class="education-grid">
+
+        <article class="education-card">
+
+          <div class="number">
+            01 · FORMACIÓN UNIVERSITARIA
+          </div>
+
+          <h3>
+            Grado en Maestro/a en Educación Infantil
+          </h3>
+
+          <p>
+            Formación universitaria especializada en educación, desarrollo
+            infantil, procesos de aprendizaje y atención educativa durante
+            la etapa de Educación Infantil.
+          </p>
+
+        </article>
+
+
+        <article class="education-card">
+
+          <div class="number">
+            02 · FORMACIÓN PROFESIONAL
+          </div>
+
+          <h3>
+            Técnico Superior en Educación Infantil
+          </h3>
+
+          <p>
+            Formación especializada en atención, cuidado, desarrollo y
+            educación de niños y niñas en la etapa infantil.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERIENCIA -->
+
+  <section id="experiencia" class="experience">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Trayectoria profesional
+      </div>
+
+      <h2 class="section-title">
+        Experiencia
+      </h2>
+
+      <p class="section-subtitle">
+        Experiencia profesional desarrollada en diferentes escuelas
+        infantiles.
+      </p>
+
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <h3>
+            Escuelas infantiles
+          </h3>
+
+          <div class="timeline-date">
+            EXPERIENCIA PROFESIONAL
+          </div>
+
+          <p>
+            Experiencia en diferentes escuelas infantiles, participando
+            activamente en el cuidado, acompañamiento y desarrollo educativo
+            de niños y niñas.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <h3>
+            Atención y acompañamiento infantil
+          </h3>
+
+          <div class="timeline-date">
+            ÁMBITO EDUCATIVO
+          </div>
+
+          <p>
+            Acompañamiento de los niños y niñas en sus rutinas diarias,
+            fomentando su autonomía, bienestar y desarrollo integral.
+          </p>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <h3>
+            Actividades educativas
+          </h3>
+
+          <div class="timeline-date">
+            DESARROLLO Y APRENDIZAJE
+          </div>
+
+          <p>
+            Participación en la preparación y realización de actividades
+            lúdicas, creativas y educativas adaptadas a las diferentes
+            edades y necesidades.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPETENCIAS -->
+
+  <section id="competencias">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        Perfil profesional
+      </div>
+
+      <h2 class="section-title">
+        Mis competencias
+      </h2>
+
+      <p class="section-subtitle">
+        Habilidades desarrolladas a través de mi formación y experiencia
+        profesional en Educación Infantil.
+      </p>
+
+
+      <div class="skills-grid">
+
+        <div class="skill">
+          <div class="skill-icon">👶</div>
+          <h3>Atención infantil</h3>
+          <p>Cuidado y acompañamiento durante las primeras etapas.</p>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">🎨</div>
+          <h3>Creatividad</h3>
+          <p>Diseño de actividades lúdicas y educativas.</p>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">🧠</div>
+          <h3>Desarrollo infantil</h3>
+          <p>Acompañamiento del desarrollo integral del niño.</p>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">🤝</div>
+          <h3>Trabajo en equipo</h3>
+          <p>Colaboración con equipos educativos y profesionales.</p>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">💬</div>
+          <h3>Comunicación</h3>
+          <p>Comunicación cercana con familias y profesionales.</p>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">🌱</div>
+          <h3>Autonomía</h3>
+          <p>Fomento de la autonomía y confianza de los niños.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACTO -->
+
+  <section id="contacto" class="contact">
+
+    <div class="container">
+
+      <div class="eyebrow" style="color:#e8c9c3;">
+        Contacto
+      </div>
+
+      <h2 class="section-title">
+        ¿Hablamos?
+      </h2>
+
+      <p class="section-subtitle">
+        Si estás buscando una profesional dedicada a la Educación Infantil,
+        estaré encantada de conocerte.
+      </p>
+
+      <div class="contact-box">
+
+        <!-- CAMBIA ESTE EMAIL POR EL TUYO -->
+        <a href="mailto:TUEMAIL@ejemplo.com" class="contact-item">
+          ✉️ TUEMAIL@ejemplo.com
+        </a>
+
+        <span class="contact-item">
+          📍 Alfafar, Valencia
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PIE -->
+
+  <footer>
+
+    © 2026 Araceli Felipe Osuna · Maestra de Educación Infantil
+
+  </footer>
+
+
+</body>
+</html>
